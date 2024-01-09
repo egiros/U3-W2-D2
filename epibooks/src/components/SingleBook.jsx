@@ -6,7 +6,7 @@ const SingleBook = ({ book, selectedBook, changeSelectedBook }) => {
       <Card
         onClick={() => changeSelectedBook(book.asin)}
         style={{
-          border: selectedBook === book.asin ? "3px solid red" : "none",
+          border: `3px solid ${selectedBook === book.asin ? "red" : "#ebebebeb"}`,
         }}
       >
         <Card.Img variant="top" src={book.img} />
